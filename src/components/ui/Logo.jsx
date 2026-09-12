@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
+import logo from '../../assets/images/yak-trail-logo.png';
+
 export default function Logo() {
   return (
     <Link className="logo" to="/">
-      <span className="logo__mark">Y</span>
-      <span>
-        YAK TRAIL<small>EXPEDITIONS</small>
-      </span>
+      <img
+        src={logo}
+        alt="Yak Trail Expeditions"
+        className="logo__image"
+      />
     </Link>
   );
+  
 }
