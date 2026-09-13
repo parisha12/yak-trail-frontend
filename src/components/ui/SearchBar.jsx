@@ -1,7 +1,8 @@
 export default function SearchBar({ value, onChange }) {
   return (
     <label className="search">
-      <span>⌕</span>
+      <span className="search__icon">⌕</span>
+
       <input
         value={value}
         onChange={(e) => onChange(e.target.value)}
